@@ -1,0 +1,87 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75); /* Darken the screen */
+  backdrop-filter: blur(10px); /* Apply blur effect */
+  /* display: none; */
+  opacity: 0;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  opacity: 0; /* Start with zero opacity */
+  visibility: hidden; /* Start hidden */
+  transition: opacity 4s ease, visibility 10s ease; /* Smooth transition over 30 seconds */
+}
+.overlay.active {
+  display: flex;
+  opacity: 100;
+  visibility: visible;
+}
+
+@keyframes scaleUpDefault {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+.animal-active {
+  animation: scaleUpDefault 10s ease-out forwards;
+}
+
+/* @keyframes scaleUpMobile {
+  0% {
+    transform: scale(0.6);
+  }
+  100% {
+    transform: scale(1);
+  }
+} */
+
+/* @media(max-width: 640px) 
+{
+  .animal-active {
+    animation: scaleUpMobile 1s ease-out forwards;
+  }
+}
+
+@media (min-width: 640px) {
+  .animal-active {
+    animation: scaleUp 1s ease-out forwards;
+  }  
+} */
+
+/* .animal-active {
+  transform: scale(1.2);
+} */
+
+
+.zoom-text {
+  border: 2px solid whitesmoke; /* Keep the border invisible */
+  padding: 5px 10px;
+  font-size: 2rem; /* Base font size */
+  color: #dcc6c6; /* Base text color */
+  transition: transform 0.3s ease, color 0.3s ease; /* Smooth transitions */
+}
+
+.zoom-text:hover {
+  color: #e2d1e2; /* Change text color to neon pink */
+  animation: pulse 1.5s infinite; /* Apply pulsating animation on hover */
+  transform: scale(1.10); /* Scale up and rotate */
+}
+@keyframes pulse {
+  0% {
+    text-shadow: 0 0 1px #2bc094, 0 0 10px #25b4be, 0 0 10px #e21220, 0 0 10px #8d11b3;
+  }
+  50% {
+    text-shadow: 0 0 1px #00ffff, 0 0 10px #39ca6e, 0 0 10px #dc0ea5, 0 0 10px #00ffff;
+  }
+  100% {
+    text-shadow: 0 0 2px #bc1abc, 0 0 8px #2a22bd, 0 3px #7dcc23, 0 0 10px #e7c75d;
+  }
+}
+
+
