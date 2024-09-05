@@ -25,25 +25,31 @@
         class="w-full p-6 mx-auto font-extrabold text-white rounded-lg pt-14 hero-section sm:w-3/4 md:w-1/2 lg:w-1/2 fade-in"
       >
         <!-- White Rectangle Placeholder -->
-        <div class="flex justify-center mb-4">
-          <div
-            class="flex items-center justify-center h-64 bg-white rounded-lg w-72"
-          >
-            <!-- Optional: Add text or other content inside the rectangle -->
-          </div>
+        <div class="flex justify-center">
+          <img
+            src="img/hero.png"
+            alt="Hero"
+            class="transition-all duration-300 hover:scale-105 sm:w-40 sm:h-40 md:w-64 md:h-64 lg:h-72 lg:w-96"
+          />
         </div>
 
         <div class="pb-10 text-center main-section">
-          <div class="mb-4 main-text sm:text-3xl md:text-4xl lg:text-5xl">
+          <div
+            class="mb-4 font-bold text-center main-text sm:text-3xl md:text-4xl lg:text-6xl animate-fade-in"
+          >
             The Crypto Alliance
           </div>
-          <div class="flex flex-wrap justify-center gap-4 main-icon-section">
+
+          <div
+            class="flex flex-wrap justify-center gap-4 main-icon-section"
+            data-aos="fade-up"
+          >
             <div>
               <a href="https://x.com/thealliance_sol">
                 <img
                   src="img/x.png"
                   alt="X"
-                  class="flex-shrink-0 w-12 h-12 rounded-md sub-icon sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-18 lg:h-18"
+                  class="flex-shrink-0 w-12 h-12 rounded-md sub-icon sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-18 lg:h-18 cards"
                 />
               </a>
             </div>
@@ -52,7 +58,7 @@
                 <img
                   src="img/tg.png"
                   alt="Telegram"
-                  class="flex-shrink-0 w-12 h-12 rounded-md sub-icon sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-18 lg:h-18"
+                  class="flex-shrink-0 w-12 h-12 rounded-md sub-icon sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-18 lg:h-18 cards"
                 />
               </a>
             </div>
@@ -68,6 +74,7 @@
           <div class="text-center lg:p-10 sub-section sm:p-10">
             <div
               class="p-10 m-10 text-2xl font-extrabold text-blue-400 main-sub-text sm:text-3xl md:text-4xl lg:text-5xl"
+              data-aos="fade-up"
             >
               HOW TO BUY
             </div>
@@ -79,7 +86,7 @@
                   <div class="flip-card">
                     <div class="flip-card-front">
                       <img
-                        src="img/1.png"
+                        src="img/1.gif"
                         alt="Step 1"
                         class="object-cover w-full h-full"
                       />
@@ -104,7 +111,7 @@
                   <div class="flip-card">
                     <div class="flip-card-front">
                       <img
-                        src="img/2.png"
+                        src="img/2.gif"
                         alt="Step 2"
                         class="object-cover w-full h-full"
                       />
@@ -133,7 +140,7 @@
                   <div class="flip-card">
                     <div class="flip-card-front">
                       <img
-                        src="img/3.png"
+                        src="img/3.gif"
                         alt="Step 3"
                         class="object-cover w-full h-full"
                       />
@@ -172,6 +179,7 @@
             <!-- Title -->
             <div
               class="pt-10 mb-4 text-2xl font-extrabold text-blue-400 main-sub-text sm:text-3xl md:text-4xl lg:text-5xl lg:pb-20"
+              data-aos="fade-up"
             >
               Crypto Alliance Vision
             </div>
@@ -183,18 +191,11 @@
                 class="flex flex-col p-6 lg:flex-row lg:gap-8 lg:items-center lg:justify-between md:p-2"
               >
                 <div class="our-vision-gif lg:w-1/2">
-                  <!-- <img
-                    src="img/vision.gif"
+                  <img
+                    src="img/vision2.gif"
                     alt="Vision"
                     class="object-contain w-full h-64 sm:h-72 md:h-80 lg:h-96"
-                  /> -->
-                  <div class="flex justify-center mb-4">
-                    <div
-                      class="flex items-center justify-center h-64 bg-white rounded-lg w-72"
-                    >
-                      <!-- Optional: Add text or other content inside the rectangle -->
-                    </div>
-                  </div>
+                  />
                 </div>
                 <div
                   class="mt-6 text-sm font-extrabold text-white lg:mt-0 lg:ml-6 lg:w-1/2 md:text-base lg:text-lg xl:text-xl"
@@ -218,22 +219,14 @@
                   breaking free from the control of centralized institutions.
                 </div>
                 <div class="our-vision-gif lg:w-1/2">
-                  <!-- <img
-                    src="img/gif1.gif"
+                  <img
+                    src="img/vision1.gif"
                     alt="Vision"
                     class="object-contain w-full h-64 sm:h-72 md:h-80 lg:h-96"
-                  /> -->
-                  <div class="flex justify-center mb-4">
-                    <div
-                      class="flex items-center justify-center h-64 bg-white rounded-lg w-72"
-                    >
-                      <!-- Optional: Add text or other content inside the rectangle -->
-                    </div>
-                  </div>
+                  />
                 </div>
               </div>
 
-              <!-- Third Content Block -->
               <div
                 data-aos="slide-right"
                 class="flex flex-col p-6 lg:flex-row lg:gap-8 lg:items-center lg:justify-between md:p-2"
@@ -241,67 +234,139 @@
             </div>
           </div>
         </div>
+
+        <!-- Third Content Block -->
         <div class="flex items-center justify-center p-6 md:p-10 lg:p-20">
           <div class="flex-grow h-1 shadow-sm bg-blue-950"></div>
           <div class="mx-4 text-center text-blue-950">The Crypto Alliance</div>
           <div class="flex-grow h-1 shadow-sm bg-blue-950"></div>
         </div>
-        <div class="pb-0 overflow-hidden text-center md:py-10 lg:px-40">
-          <!-- Title -->
-          <div class="mb-10 text-center">
+
+        <div class="pb-0 text-center md:py-10 lg:px-40">
+          <div class="mb-10">
             <h2
               class="text-3xl font-extrabold text-blue-500 sm:text-4xl md:text-5xl lg:text-6xl cards"
+              data-aos="fade-up"
             >
-              Road Map
+              Tokenomics
             </h2>
           </div>
-          <!-- Content -->
-          <div class="flex flex-col pt-10 mb-10 lg:flex-row lg:gap-12 lg:justify-between cards">
-            <!-- Content Block for Q3 2024 -->
+          <!-- Roadmap Content -->
+          <div class="flex flex-col pt-10 mb-10 lg:flex-row lg:gap-12">
+            <!-- Q3 2024 -->
             <div
               data-aos="fade-up"
-              class="flex flex-col p-6 bg-gray-800 rounded-lg shadow-lg lg:w-1/3 lg:ml-8 md:p-8 cards"
+              class="flex flex-col p-6 bg-gray-800 rounded-lg shadow-lg lg:w-1/3 md:p-8"
+            >
+              <ul
+                class="pl-5 space-y-3 text-sm font-semibold text-white list-disc"
+              >
+                <li>Fair Launch Buy and sell at any time</li>
+              </ul>
+            </div>
+            <!-- Q4 2024 -->
+            <div
+              data-aos="fade-up"
+              class="flex flex-col p-6 bg-gray-800 rounded-lg shadow-lg lg:w-1/3 md:p-8"
+            >
+              <ul
+                class="pl-5 space-y-3 text-sm font-semibold text-white list-disc"
+              >
+                <li>No pre-sale, no insiders, max 1B supply</li>
+              </ul>
+            </div>
+            <!-- Q1 2025 -->
+            <div
+              data-aos="fade-up"
+              class="flex flex-col p-6 bg-gray-800 rounded-lg shadow-lg lg:w-1/3 md:p-8"
+            >
+              <ul
+                class="pl-5 space-y-3 text-sm font-semibold text-white list-disc"
+              >
+                <li>Ownership renounced, immutable</li>
+              </ul>
+            </div>
+            <div
+              data-aos="fade-up"
+              class="flex flex-col p-6 bg-gray-800 rounded-lg shadow-lg lg:w-1/3 md:p-8"
+            >
+              <ul
+                class="pl-5 space-y-3 text-sm font-semibold text-white list-disc"
+              >
+                <li>Fully audited smart contracts</li>
+              </ul>
+            </div>
+            <div
+              data-aos="fade-up"
+              class="flex flex-col p-6 bg-gray-800 rounded-lg shadow-lg lg:w-1/3 md:p-8"
+            >
+              <ul
+                class="pl-5 space-y-3 text-sm font-semibold text-white list-disc"
+              >
+                <li>Ownership renounced, immutable</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fourth Content Block -->
+
+        <div class="flex items-center justify-center p-6 md:p-10 lg:p-20">
+          <div class="flex-grow h-1 shadow-sm bg-blue-950"></div>
+          <div class="mx-4 text-center text-blue-950">The Crypto Alliance</div>
+          <div class="flex-grow h-1 shadow-sm bg-blue-950"></div>
+        </div>
+        <div class="pb-0 text-center md:py-10 lg:px-40">
+          <div class="mb-10">
+            <h2
+              class="text-3xl font-extrabold text-blue-500 sm:text-4xl md:text-5xl lg:text-6xl cards"
+              data-aos="fade-up"
+            >
+              Roadmap
+            </h2>
+          </div>
+          <!-- Roadmap Content -->
+          <div class="flex flex-col pt-10 mb-10 lg:flex-row lg:gap-12">
+            <!-- Q3 2024 -->
+            <div
+              data-aos="fade-up"
+              class="flex flex-col p-6 bg-gray-800 rounded-lg shadow-lg lg:w-1/3 md:p-8"
             >
               <h3 class="mb-4 text-xl font-semibold text-blue-300">Q3 2024</h3>
               <ul
-                class="pl-5 space-y-3 text-sm font-semibold text-white list-disc lg:text-base xl:text-lg"
+                class="pl-5 space-y-3 text-sm font-semibold text-white list-disc"
               >
                 <li>Launch on Moonshot</li>
                 <li>Bond to Meterora</li>
                 <li>Develop a strong, safe community</li>
               </ul>
             </div>
-            <!-- Content Block for Q4 2024 -->
+            <!-- Q4 2024 -->
             <div
               data-aos="fade-up"
-              class="flex flex-col p-6 bg-gray-800 rounded-lg shadow-lg lg:w-1/3 lg:ml-8 md:p-8 cards"
+              class="flex flex-col p-6 bg-gray-800 rounded-lg shadow-lg lg:w-1/3 md:p-8"
             >
               <h3 class="mb-4 text-xl font-semibold text-blue-300">Q4 2024</h3>
               <ul
-                class="pl-5 space-y-3 text-sm font-semibold text-white list-disc lg:text-base xl:text-lg"
+                class="pl-5 space-y-3 text-sm font-semibold text-white list-disc"
               >
-                <li>
-                  Build The Crypto Alliance by partnering with other meme tokens
-                  on Solana & Base
-                </li>
-                <li>Video animations and meme creations</li>
-                <li>
-                  US Election & announcement of the official Crypto Alliance
-                </li>
-                <li>Merch drop - add more characters to the Crypto Alliance</li>
+                <li>Partner with meme tokens on Meterora</li>
+                <li>Project development</li>
+                <li>Launch new dapps</li>
               </ul>
             </div>
-            <!-- Content Block for Q1 2025 -->
+            <!-- Q1 2025 -->
             <div
               data-aos="fade-up"
-              class="flex flex-col p-6 bg-gray-800 rounded-lg shadow-lg lg:w-1/3 lg:ml-8 md:p-8 cards"
+              class="flex flex-col p-6 bg-gray-800 rounded-lg shadow-lg lg:w-1/3 md:p-8"
             >
               <h3 class="mb-4 text-xl font-semibold text-blue-300">Q1 2025</h3>
               <ul
-                class="pl-5 space-y-3 text-sm font-semibold text-white list-disc lg:text-base xl:text-lg"
+                class="pl-5 space-y-3 text-sm font-semibold text-white list-disc"
               >
-                <li>Additional partnerships with Solana tokens</li>
-                <li>Discuss CEX listings</li>
+                <li>Develop into metaverse</li>
+                <li>Bonding solutions for alliances</li>
+                <li>Marketing and public releases</li>
               </ul>
             </div>
           </div>

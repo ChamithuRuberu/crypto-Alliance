@@ -177,5 +177,5 @@
     transform: rotateY(180deg);
 }
 .cards:hover{
-  transform: scale(1.10); /* Scale up and rotate */
+  transform: scale(1.025); /* Scale up and rotate */
 }
