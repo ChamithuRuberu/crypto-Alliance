@@ -24,12 +24,12 @@
     transform: scale(1);
   }
   100% {
-    transform: scale(1.2);
+    transform: scale(1.25);
   }
 }
 
 .animal-active {
-  animation: scaleUpDefault 10s ease-out forwards;
+  animation: scaleUpDefault 18s ease-out forwards;
 }
 
 /* @keyframes scaleUpMobile {
@@ -61,10 +61,38 @@
 
 .zoom-text {
   border: 2px solid whitesmoke; /* Keep the border invisible */
-  padding: 5px 10px;
-  font-size: 2rem; /* Base font size */
+  padding:  20px;
+  font-size: 28px; /* Base font size */
   color: #dcc6c6; /* Base text color */
   transition: transform 0.3s ease, color 0.3s ease; /* Smooth transitions */
+}
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .zoom-text {
+      font-size: 24px; /* Slightly smaller font size for medium screens */
+      padding: 20px; /* Adjust padding */
+  }
+}
+
+@media (max-width: 992px) {
+  .zoom-text {
+      font-size: 20px; /* Smaller font size for tablets */
+      padding: 20px; /* Adjust padding */
+  }
+}
+
+@media (max-width: 768px) {
+  .zoom-text {
+      font-size: 18px; /* Smaller font size for mobile devices */
+      padding: 20px; /* Adjust padding */
+  }
+}
+
+@media (max-width: 576px) {
+  .zoom-text {
+      font-size: 16px; /* Even smaller font size for very small screens */
+      padding: 20px; /* Adjust padding */
+  }
 }
 
 .zoom-text:hover {
