@@ -180,3 +180,8 @@
   transform: scale(1.15);
   cursor: pointer; /* Scale up and rotate */
 }
+
+ul{
+
+  list-style-type: none;
+}
