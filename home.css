@@ -176,3 +176,6 @@
 .flip-card:hover {
     transform: rotateY(180deg);
 }
+.cards:hover{
+  transform: scale(1.10); /* Scale up and rotate */
+}
